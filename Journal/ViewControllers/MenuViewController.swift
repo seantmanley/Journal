@@ -79,7 +79,7 @@ class MenuViewController: UICollectionViewController {
         
         switch(traitCollection.userInterfaceIdiom) {
         case .Phone:
-            size = collectionView.frame.size.width / (UIDevice.currentDevice().orientation.isPortrait ? 2.0 : 3.0)
+            size = collectionView.frame.size.width / (UIDevice.currentDevice().orientation.isPortrait ? 2.0 : 4.0)
             break
         case .Pad:
             size = collectionView.frame.size.width / (UIDevice.currentDevice().orientation.isPortrait ? 3.0 : 4.0)
