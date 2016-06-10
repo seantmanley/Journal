@@ -39,21 +39,6 @@
 		C8E2E7311D0A95FA005F06B2 /* Flavour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E7211D0A95FA005F06B2 /* Flavour.swift */; };
 		C8E2E7321D0A95FA005F06B2 /* FlavourType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E7221D0A95FA005F06B2 /* FlavourType+CoreDataProperties.swift */; };
 		C8E2E7331D0A95FA005F06B2 /* FlavourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E7231D0A95FA005F06B2 /* FlavourType.swift */; };
-		C8E2E7831D0AA2E2005F06B2 /* icon_Beer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7741D0AA2E2005F06B2 /* icon_Beer.jpg */; };
-		C8E2E7841D0AA2E2005F06B2 /* icon_Beer@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7751D0AA2E2005F06B2 /* icon_Beer@2x.jpg */; };
-		C8E2E7851D0AA2E2005F06B2 /* icon_Beer@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7761D0AA2E2005F06B2 /* icon_Beer@3x.jpg */; };
-		C8E2E7861D0AA2E2005F06B2 /* icon_Cannabis.@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7771D0AA2E2005F06B2 /* icon_Cannabis.@3x.jpg */; };
-		C8E2E7871D0AA2E2005F06B2 /* icon_Cannabis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7781D0AA2E2005F06B2 /* icon_Cannabis.jpg */; };
-		C8E2E7881D0AA2E2005F06B2 /* icon_Cannabis@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7791D0AA2E2005F06B2 /* icon_Cannabis@2x.jpg */; };
-		C8E2E7891D0AA2E2005F06B2 /* icon_Cheese.@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E77A1D0AA2E2005F06B2 /* icon_Cheese.@3x.jpg */; };
-		C8E2E78A1D0AA2E2005F06B2 /* icon_Cheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E77B1D0AA2E2005F06B2 /* icon_Cheese.jpg */; };
-		C8E2E78B1D0AA2E2005F06B2 /* icon_Cheese@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E77C1D0AA2E2005F06B2 /* icon_Cheese@2x.jpg */; };
-		C8E2E78C1D0AA2E2005F06B2 /* icon_Whiskey.@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E77D1D0AA2E2005F06B2 /* icon_Whiskey.@3x.jpg */; };
-		C8E2E78D1D0AA2E2005F06B2 /* icon_Whiskey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E77E1D0AA2E2005F06B2 /* icon_Whiskey.jpg */; };
-		C8E2E78E1D0AA2E2005F06B2 /* icon_Whiskey@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E77F1D0AA2E2005F06B2 /* icon_Whiskey@2x.jpg */; };
-		C8E2E78F1D0AA2E2005F06B2 /* icon_Wine.@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7801D0AA2E2005F06B2 /* icon_Wine.@3x.jpg */; };
-		C8E2E7901D0AA2E2005F06B2 /* icon_Wine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7811D0AA2E2005F06B2 /* icon_Wine.jpg */; };
-		C8E2E7911D0AA2E2005F06B2 /* icon_Wine@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E2E7821D0AA2E2005F06B2 /* icon_Wine@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,21 +98,6 @@
 		C8E2E7211D0A95FA005F06B2 /* Flavour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flavour.swift; path = CoreDataClasses/Flavour.swift; sourceTree = "<group>"; };
 		C8E2E7221D0A95FA005F06B2 /* FlavourType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlavourType+CoreDataProperties.swift"; path = "CoreDataClasses/FlavourType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C8E2E7231D0A95FA005F06B2 /* FlavourType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlavourType.swift; path = CoreDataClasses/FlavourType.swift; sourceTree = "<group>"; };
-		C8E2E7741D0AA2E2005F06B2 /* icon_Beer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon_Beer.jpg; path = Images/icon_Beer.jpg; sourceTree = "<group>"; };
-		C8E2E7751D0AA2E2005F06B2 /* icon_Beer@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Beer@2x.jpg"; path = "Images/icon_Beer@2x.jpg"; sourceTree = "<group>"; };
-		C8E2E7761D0AA2E2005F06B2 /* icon_Beer@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Beer@3x.jpg"; path = "Images/icon_Beer@3x.jpg"; sourceTree = "<group>"; };
-		C8E2E7771D0AA2E2005F06B2 /* icon_Cannabis.@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Cannabis.@3x.jpg"; path = "Images/icon_Cannabis.@3x.jpg"; sourceTree = "<group>"; };
-		C8E2E7781D0AA2E2005F06B2 /* icon_Cannabis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon_Cannabis.jpg; path = Images/icon_Cannabis.jpg; sourceTree = "<group>"; };
-		C8E2E7791D0AA2E2005F06B2 /* icon_Cannabis@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Cannabis@2x.jpg"; path = "Images/icon_Cannabis@2x.jpg"; sourceTree = "<group>"; };
-		C8E2E77A1D0AA2E2005F06B2 /* icon_Cheese.@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Cheese.@3x.jpg"; path = "Images/icon_Cheese.@3x.jpg"; sourceTree = "<group>"; };
-		C8E2E77B1D0AA2E2005F06B2 /* icon_Cheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon_Cheese.jpg; path = Images/icon_Cheese.jpg; sourceTree = "<group>"; };
-		C8E2E77C1D0AA2E2005F06B2 /* icon_Cheese@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Cheese@2x.jpg"; path = "Images/icon_Cheese@2x.jpg"; sourceTree = "<group>"; };
-		C8E2E77D1D0AA2E2005F06B2 /* icon_Whiskey.@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Whiskey.@3x.jpg"; path = "Images/icon_Whiskey.@3x.jpg"; sourceTree = "<group>"; };
-		C8E2E77E1D0AA2E2005F06B2 /* icon_Whiskey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon_Whiskey.jpg; path = Images/icon_Whiskey.jpg; sourceTree = "<group>"; };
-		C8E2E77F1D0AA2E2005F06B2 /* icon_Whiskey@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Whiskey@2x.jpg"; path = "Images/icon_Whiskey@2x.jpg"; sourceTree = "<group>"; };
-		C8E2E7801D0AA2E2005F06B2 /* icon_Wine.@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Wine.@3x.jpg"; path = "Images/icon_Wine.@3x.jpg"; sourceTree = "<group>"; };
-		C8E2E7811D0AA2E2005F06B2 /* icon_Wine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon_Wine.jpg; path = Images/icon_Wine.jpg; sourceTree = "<group>"; };
-		C8E2E7821D0AA2E2005F06B2 /* icon_Wine@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icon_Wine@2x.jpg"; path = "Images/icon_Wine@2x.jpg"; sourceTree = "<group>"; };
 		CB68D405906A15BE2A0BFB70 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,21 +249,6 @@
 		C8E2E6D31D0A8568005F06B2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C8E2E7741D0AA2E2005F06B2 /* icon_Beer.jpg */,
-				C8E2E7751D0AA2E2005F06B2 /* icon_Beer@2x.jpg */,
-				C8E2E7761D0AA2E2005F06B2 /* icon_Beer@3x.jpg */,
-				C8E2E7771D0AA2E2005F06B2 /* icon_Cannabis.@3x.jpg */,
-				C8E2E7781D0AA2E2005F06B2 /* icon_Cannabis.jpg */,
-				C8E2E7791D0AA2E2005F06B2 /* icon_Cannabis@2x.jpg */,
-				C8E2E77A1D0AA2E2005F06B2 /* icon_Cheese.@3x.jpg */,
-				C8E2E77B1D0AA2E2005F06B2 /* icon_Cheese.jpg */,
-				C8E2E77C1D0AA2E2005F06B2 /* icon_Cheese@2x.jpg */,
-				C8E2E77D1D0AA2E2005F06B2 /* icon_Whiskey.@3x.jpg */,
-				C8E2E77E1D0AA2E2005F06B2 /* icon_Whiskey.jpg */,
-				C8E2E77F1D0AA2E2005F06B2 /* icon_Whiskey@2x.jpg */,
-				C8E2E7801D0AA2E2005F06B2 /* icon_Wine.@3x.jpg */,
-				C8E2E7811D0AA2E2005F06B2 /* icon_Wine.jpg */,
-				C8E2E7821D0AA2E2005F06B2 /* icon_Wine@2x.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -405,24 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8E2E7831D0AA2E2005F06B2 /* icon_Beer.jpg in Resources */,
-				C8E2E78D1D0AA2E2005F06B2 /* icon_Whiskey.jpg in Resources */,
-				C8E2E78B1D0AA2E2005F06B2 /* icon_Cheese@2x.jpg in Resources */,
 				C85AA9F91D0A3161001F44D0 /* LaunchScreen.storyboard in Resources */,
-				C8E2E7881D0AA2E2005F06B2 /* icon_Cannabis@2x.jpg in Resources */,
-				C8E2E7901D0AA2E2005F06B2 /* icon_Wine.jpg in Resources */,
-				C8E2E7871D0AA2E2005F06B2 /* icon_Cannabis.jpg in Resources */,
-				C8E2E78F1D0AA2E2005F06B2 /* icon_Wine.@3x.jpg in Resources */,
 				C8E2E6CC1D0A7785005F06B2 /* Tile.Storyboard in Resources */,
-				C8E2E7841D0AA2E2005F06B2 /* icon_Beer@2x.jpg in Resources */,
-				C8E2E78E1D0AA2E2005F06B2 /* icon_Whiskey@2x.jpg in Resources */,
-				C8E2E7861D0AA2E2005F06B2 /* icon_Cannabis.@3x.jpg in Resources */,
-				C8E2E78A1D0AA2E2005F06B2 /* icon_Cheese.jpg in Resources */,
-				C8E2E7891D0AA2E2005F06B2 /* icon_Cheese.@3x.jpg in Resources */,
-				C8E2E78C1D0AA2E2005F06B2 /* icon_Whiskey.@3x.jpg in Resources */,
-				C8E2E7911D0AA2E2005F06B2 /* icon_Wine@2x.jpg in Resources */,
 				C85AA9F61D0A3161001F44D0 /* Assets.xcassets in Resources */,
-				C8E2E7851D0AA2E2005F06B2 /* icon_Beer@3x.jpg in Resources */,
 				C85AA9F11D0A3161001F44D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
