@@ -1,0 +1,13 @@
+PODS:
+  - CheckboxList (0.2.0)
+  - Cocoa-Charts (0.2.1.1)
+
+DEPENDENCIES:
+  - CheckboxList
+  - Cocoa-Charts (~> 0.2.1.1)
+
+SPEC CHECKSUMS:
+  CheckboxList: 1630e36fd6be550909ed7b221bcdaa9995759536
+  Cocoa-Charts: 9592979d0d0352674e0d3b73285b219a54823e15
+
+COCOAPODS: 0.39.0
