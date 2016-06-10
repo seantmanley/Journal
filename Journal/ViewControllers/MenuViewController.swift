@@ -12,10 +12,10 @@ import CoreData
 class MenuViewController: UICollectionViewController {
     
     var entryTypes:[EntryType] = []
-
+    var collectionViewSizeChanged:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.fetchEntryTypes()
     }
 
@@ -49,5 +49,45 @@ class MenuViewController: UICollectionViewController {
         if let cell = sender as? TileCell {
             destination?.entryType = cell.entryType
         }
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        
+        collectionViewSizeChanged = true
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        if collectionViewSizeChanged {
+            self.collectionView?.collectionViewLayout.invalidateLayout()
+        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if collectionViewSizeChanged {
+            collectionViewSizeChanged = false
+            collectionView?.performBatchUpdates({ }, completion: nil)
+        }
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let size:CGFloat
+        
+        switch(traitCollection.userInterfaceIdiom) {
+        case .Phone:
+            size = collectionView.frame.size.width / (UIDevice.currentDevice().orientation.isPortrait ? 2.0 : 3.0)
+            break
+        case .Pad:
+            size = collectionView.frame.size.width / (UIDevice.currentDevice().orientation.isPortrait ? 3.0 : 4.0)
+            break
+        default:
+            size = 0.0
+            break
+        }
+        return CGSize(width: size, height: size)
     }
 }
