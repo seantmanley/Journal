@@ -14,9 +14,9 @@ import CoreData
 
 extension Journal {
 
-    @NSManaged var owner: String?
     @NSManaged var dateStarted: NSDate?
     @NSManaged var name: String?
+    @NSManaged var owner: String?
     @NSManaged var entries: NSOrderedSet?
     @NSManaged var entryTypes: NSOrderedSet?
 

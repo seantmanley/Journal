@@ -15,7 +15,12 @@ import CoreData
 extension EntryType {
 
     @NSManaged var name: String?
-    @NSManaged var journal: NSManagedObject?
+    @NSManaged var imageBin: NSData?
+    @NSManaged var imageName: String?
     @NSManaged var entries: NSSet?
+    @NSManaged var journal: Journal?
+    @NSManaged var statTypes: NSOrderedSet?
+    @NSManaged var servingTypes: NSOrderedSet?
+    @NSManaged var flavourTypes: NSOrderedSet?
 
 }

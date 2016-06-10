@@ -14,8 +14,8 @@ import CoreData
 
 extension Flavour {
 
-    @NSManaged var name: String?
-    @NSManaged var entry: NSManagedObject?
-    @NSManaged var flavourValue: NSManagedObject?
+    @NSManaged var value: NSNumber?
+    @NSManaged var entry: Entry?
+    @NSManaged var flavour: NSSet?
 
 }

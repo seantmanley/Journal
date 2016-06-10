@@ -1,5 +1,5 @@
 //
-//  FlavourValue.swift
+//  StatType.swift
 //  Journal
 //
 //  Created by Sean Manley on 6/9/16.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class FlavourValue: NSManagedObject {
+class StatType: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

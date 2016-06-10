@@ -1,5 +1,5 @@
 //
-//  StatValue.swift
+//  Stat.swift
 //  Journal
 //
 //  Created by Sean Manley on 6/9/16.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class StatValue: NSManagedObject {
+class Stat: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

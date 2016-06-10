@@ -1,5 +1,5 @@
 //
-//  StatValue+CoreDataProperties.swift
+//  FlavourType+CoreDataProperties.swift
 //  Journal
 //
 //  Created by Sean Manley on 6/9/16.
@@ -12,10 +12,10 @@
 import Foundation
 import CoreData
 
-extension StatValue {
+extension FlavourType {
 
-    @NSManaged var value: NSObject?
-    @NSManaged var stat: NSSet?
-    @NSManaged var entry: Entry?
+    @NSManaged var name: String?
+    @NSManaged var entryType: EntryType?
+    @NSManaged var flavourValue: Flavour?
 
 }

@@ -15,6 +15,6 @@ import CoreData
 extension ServingType {
 
     @NSManaged var name: String?
-    @NSManaged var entry: Entry?
+    @NSManaged var entryType: EntryType?
 
 }

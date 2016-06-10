@@ -1,5 +1,5 @@
 //
-//  Stats+CoreDataProperties.swift
+//  Stat+CoreDataProperties.swift
 //  Journal
 //
 //  Created by Sean Manley on 6/9/16.
@@ -12,10 +12,10 @@
 import Foundation
 import CoreData
 
-extension Stats {
+extension Stat {
 
-    @NSManaged var name: String?
-    @NSManaged var entry: NSManagedObject?
-    @NSManaged var statValue: NSManagedObject?
+    @NSManaged var value: NSObject?
+    @NSManaged var entry: Entry?
+    @NSManaged var stat: NSSet?
 
 }

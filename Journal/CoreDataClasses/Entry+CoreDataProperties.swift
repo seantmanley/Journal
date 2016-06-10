@@ -16,18 +16,16 @@ extension Entry {
 
     @NSManaged var dateAdded: NSDate?
     @NSManaged var dateModified: NSDate?
+    @NSManaged var dateSampled: NSDate?
+    @NSManaged var name: String?
+    @NSManaged var notes: String?
     @NSManaged var price: NSDecimalNumber?
     @NSManaged var rating: NSNumber?
-    @NSManaged var name: String?
     @NSManaged var source: String?
-    @NSManaged var dateSampled: NSDate?
-    @NSManaged var notes: String?
-    @NSManaged var stats: NSOrderedSet?
-    @NSManaged var statValues: NSSet?
-    @NSManaged var servingTypes: NSOrderedSet?
+    @NSManaged var entryType: EntryType?
     @NSManaged var flavours: NSOrderedSet?
     @NSManaged var flavourValues: NSSet?
-    @NSManaged var journal: NSManagedObject?
-    @NSManaged var entryType: NSManagedObject?
+    @NSManaged var journal: Journal?
+    @NSManaged var stats: NSOrderedSet?
 
 }

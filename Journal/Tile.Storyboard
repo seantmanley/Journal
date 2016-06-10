@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G7b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NrM-7e-hFn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iA8-8W-H8c">
+            <objects>
+                <navigationController id="NrM-7e-hFn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="STw-r4-PAz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FiS-zg-HXx" kind="relationship" relationship="rootViewController" id="ZQ9-lZ-5lP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cC0-Wo-nL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="406"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="DBo-kP-UH1">
+            <objects>
+                <collectionViewController id="FiS-zg-HXx" customClass="MenuViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dop-vl-GfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tzO-WP-Q3C">
+                            <size key="itemSize" width="120" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TileCell" id="pow-pI-CMy" customClass="TileCell" customModule="Journal" customModuleProvider="target">
+                                <rect key="frame" x="10" y="64" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Aq-z4-nG7">
+                                            <rect key="frame" x="8" y="8" width="104" height="104"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7t-9H-fU6">
+                                            <rect key="frame" x="39" y="49" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="i7t-9H-fU6" firstAttribute="centerX" secondItem="pow-pI-CMy" secondAttribute="centerX" id="5pY-6d-Og9"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="6Aq-z4-nG7" secondAttribute="trailing" id="DzN-Ph-Hh6"/>
+                                    <constraint firstItem="6Aq-z4-nG7" firstAttribute="top" secondItem="pow-pI-CMy" secondAttribute="topMargin" id="HQb-zQ-ALJ"/>
+                                    <constraint firstItem="6Aq-z4-nG7" firstAttribute="leading" secondItem="pow-pI-CMy" secondAttribute="leadingMargin" id="d1s-4x-6rV"/>
+                                    <constraint firstItem="i7t-9H-fU6" firstAttribute="centerY" secondItem="pow-pI-CMy" secondAttribute="centerY" id="kZX-sW-gQY"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="6Aq-z4-nG7" secondAttribute="bottom" id="t8l-LY-hMF"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="tileImage" destination="6Aq-z4-nG7" id="6tw-iX-YfD"/>
+                                    <outlet property="titleLabel" destination="i7t-9H-fU6" id="kOx-1u-WBQ"/>
+                                    <segue destination="Mhf-eW-wMB" kind="push" identifier="addEntry" id="y2Y-iv-jdF"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="FiS-zg-HXx" id="Kmo-pY-NMZ"/>
+                            <outlet property="delegate" destination="FiS-zg-HXx" id="Ub9-jM-I6P"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Pib-tI-3gb">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="GCV-VS-vAh"/>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jpz-c6-ycV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="406"/>
+        </scene>
+        <!--Add Journal Entry View Controller-->
+        <scene sceneID="Fhc-w0-GdE">
+            <objects>
+                <viewController id="Mhf-eW-wMB" customClass="AddJournalEntryViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4OE-uS-IFY"/>
+                        <viewControllerLayoutGuide type="bottom" id="iZp-0I-vra"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i7n-YV-AuK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6UT-Vl-ydH">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="FBK-Op-8Vp">
+                            <connections>
+                                <action selector="savePressed:" destination="Mhf-eW-wMB" id="w3q-Hc-7wm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fp2-Lh-lea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1363" y="406"/>
+        </scene>
+    </scenes>
+</document>
