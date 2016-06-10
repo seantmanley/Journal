@@ -120,7 +120,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IQc-Ue-15v" id="OE7-ml-kp9">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -131,6 +131,7 @@
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addNewJournal:" destination="ghx-0I-PIr" eventType="touchUpInside" id="g0C-ty-Oaj"/>
+                                    <action selector="addPressed:" destination="ghx-0I-PIr" eventType="touchUpInside" id="uj0-hZ-xvp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhJ-X3-NtZ">
@@ -164,6 +165,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="addPressed" destination="zbz-RP-SAM" id="yLU-ej-E2L"/>
                         <outlet property="newEntryType" destination="Meq-L2-O0O" id="x6y-QB-Cyu"/>
                         <outlet property="newJournal" destination="Vhf-25-SFd" id="PqJ-0i-95o"/>
                         <outlet property="tableView" destination="O8g-Gs-K9m" id="73i-vg-sAd"/>

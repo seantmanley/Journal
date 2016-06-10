@@ -9,9 +9,10 @@
 import UIKit
 import CoreData
 
-class AddJournalViewController: UIViewController, UITableViewDataSource {
+class AddJournalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var entryTypes:[EntryType] = []
+    var selectedEntryTypes:[EntryType] = []
     
     @IBOutlet weak var newEntryType: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -20,6 +21,7 @@ class AddJournalViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
     
     func fetchEntryTypes() -> [EntryType] {
@@ -36,9 +38,18 @@ class AddJournalViewController: UIViewController, UITableViewDataSource {
         return []
     }
     
+    @IBAction func addPressed(sender: AnyObject) {
+        let appDelegate = (UIApplication.sharedApplication().delegate as? AppDelegate)
+        let context = appDelegate?.managedObjectContext
+        let journal:Journal = NSEntityDescription.insertNewObjectForEntityForName("Journal", inManagedObjectContext: context!) as! Journal
+        journal.name = self.newJournal.text
+        
+    }
+    
     @IBAction func cancelPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     @IBAction func addNewEntryType(sender: AnyObject) {
         let appDelegate = (UIApplication.sharedApplication().delegate as? AppDelegate)
         let context = appDelegate?.managedObjectContext
@@ -82,12 +93,21 @@ class AddJournalViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier("CheckCell") {
             cell.textLabel?.text = entryTypes[indexPath.row].name
-            
-//            cell.textLabel?.text = "Test"
-            cell.imageView?.image = UIImage(named: "UncheckedBox")
+            if self.selectedEntryTypes.contains(entryTypes[indexPath.row]) {
+                cell.selected = true
+            }
             return cell
         } else {
             return UITableViewCell()
         }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.selectedEntryTypes.append(self.entryTypes[indexPath.row])
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let index = self.selectedEntryTypes.indexOf(self.entryTypes[indexPath.row])
+        self.selectedEntryTypes.removeAtIndex(index!)
     }
 }
