@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class AddJournalEntryViewController: UIViewController {
-
+    
+    @IBOutlet weak var radarView: RadarChart!
+    
     var entryType:EntryType? {
         didSet {
             if let name = entryType?.name {
@@ -17,11 +20,12 @@ class AddJournalEntryViewController: UIViewController {
             }
         }
     }
+    var flavourTypes:[FlavourType]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        buildFlavourRadar()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,5 +35,13 @@ class AddJournalEntryViewController: UIViewController {
 
     @IBAction func savePressed(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func buildFlavourRadar() {
+        flavourTypes = entryType?.flavourTypes?.array as! [FlavourType]
+        
+        let radar = RadarChart(frame: radarView.frame)
+        radarView.addSubview(radar)
+        radar.animateDraw(1.0)
     }
 }

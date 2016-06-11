@@ -39,6 +39,7 @@
 		C8E2E7311D0A95FA005F06B2 /* Flavour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E7211D0A95FA005F06B2 /* Flavour.swift */; };
 		C8E2E7321D0A95FA005F06B2 /* FlavourType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E7221D0A95FA005F06B2 /* FlavourType+CoreDataProperties.swift */; };
 		C8E2E7331D0A95FA005F06B2 /* FlavourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E7231D0A95FA005F06B2 /* FlavourType.swift */; };
+		C8FDD0911D0B7DB80092E7B5 /* RadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDD0901D0B7DB80092E7B5 /* RadarChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		C8E2E7211D0A95FA005F06B2 /* Flavour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flavour.swift; path = CoreDataClasses/Flavour.swift; sourceTree = "<group>"; };
 		C8E2E7221D0A95FA005F06B2 /* FlavourType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FlavourType+CoreDataProperties.swift"; path = "CoreDataClasses/FlavourType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C8E2E7231D0A95FA005F06B2 /* FlavourType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlavourType.swift; path = CoreDataClasses/FlavourType.swift; sourceTree = "<group>"; };
+		C8FDD0901D0B7DB80092E7B5 /* RadarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadarChart.swift; path = Views/RadarChart.swift; sourceTree = "<group>"; };
 		CB68D405906A15BE2A0BFB70 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 			children = (
 				C84ADD121D0A5C08001DECB8 /* CheckBoxCell.swift */,
 				C8E2E6CF1D0A7BC3005F06B2 /* TileCell.swift */,
+				C8FDD0901D0B7DB80092E7B5 /* RadarChart.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				C8E2E7261D0A95FA005F06B2 /* ServingType+CoreDataProperties.swift in Sources */,
 				C8E2E6D21D0A7FBC005F06B2 /* AddJournalEntryViewController.swift in Sources */,
 				C8E2E72A1D0A95FA005F06B2 /* StatType+CoreDataProperties.swift in Sources */,
+				C8FDD0911D0B7DB80092E7B5 /* RadarChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
