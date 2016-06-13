@@ -38,7 +38,7 @@ class AppManager: NSObject {
         do {
             let results = try context.executeFetchRequest(request)
             if results.count == 0 {
-                for item in [(name: "Beer", image: "icon_Beer"),(name: "Wine", image: "icon_Wine."),(name: "Cheese", image: "icon_Cheese."),(name: "Whiskey", image: "icon_Whiskey."),(name: "Cannabis", image: "icon_Cannabis.")] {
+                for item in [(name: "Beer", image: "icon_Beer"),(name: "Wine", image: "icon_Wine"),(name: "Cheese", image: "icon_Cheese"),(name: "Whiskey", image: "icon_Whiskey"),(name: "Cannabis", image: "icon_Cannabis")] {
                     let entryType = NSEntityDescription.insertNewObjectForEntityForName("EntryType", inManagedObjectContext: context) as! EntryType
                     entryType.name = item.name
                     entryType.journal = journal

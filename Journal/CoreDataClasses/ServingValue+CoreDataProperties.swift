@@ -1,5 +1,5 @@
 //
-//  StatType+CoreDataProperties.swift
+//  ServingValue+CoreDataProperties.swift
 //  Journal
 //
 //  Created by Zachary Heusinkveld on 6/12/16.
@@ -12,10 +12,10 @@
 import Foundation
 import CoreData
 
-extension StatType {
+extension ServingValue {
 
-    @NSManaged var name: String?
-    @NSManaged var entryType: EntryType?
-    @NSManaged var statValue: Stat?
+    @NSManaged var value: String?
+    @NSManaged var entry: Entry?
+    @NSManaged var servingType: ServingType?
 
 }

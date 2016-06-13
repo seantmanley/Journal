@@ -51,6 +51,9 @@ class MenuViewController: UICollectionViewController {
         }
     }
     
+    @IBAction func editPressed(sender: AnyObject) {
+    }
+    
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         

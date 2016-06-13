@@ -1,5 +1,5 @@
 //
-//  StatType.swift
+//  ServingValue.swift
 //  Journal
 //
 //  Created by Zachary Heusinkveld on 6/12/16.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class StatType: NSManagedObject {
+class ServingValue: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Journal
+//  JournalEditor
 //
-//  Created by Sean Manley on 6/9/16.
+//  Created by Zachary Heusinkveld on 6/12/16.
 //  Copyright © 2016 Sean Manley. All rights reserved.
 //
 
@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        AppManager.sharedManager.initialize()
         return true
     }
 
@@ -48,14 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
-        // The directory the application uses to store the Core Data store file. This code uses a directory named "SManley.Journal" in the application's documents Application Support directory.
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "SeantTManley.JournalEditor" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1]
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("Journal", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("JournalEditor", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
 
@@ -68,12 +67,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
         } catch {
-            do {
-                try NSFileManager.defaultManager().removeItemAtURL(url)
-            } catch {
-                
-            }
-            
             // Report any error we got.
             var dict = [String: AnyObject]()
             dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data"

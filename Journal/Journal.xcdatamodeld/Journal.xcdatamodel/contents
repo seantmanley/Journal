@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15G7b" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
     <entity name="Entry" representedClassName=".Entry" syncable="YES">
         <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
@@ -10,10 +10,10 @@
         <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="entryType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntryType" inverseName="entries" inverseEntity="EntryType" syncable="YES"/>
-        <relationship name="flavours" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FlavourType" syncable="YES"/>
-        <relationship name="flavourValues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Flavour" inverseName="entry" inverseEntity="Flavour" syncable="YES"/>
+        <relationship name="flavourValues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FlavourValue" inverseName="entry" inverseEntity="FlavourValue" syncable="YES"/>
         <relationship name="journal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Journal" inverseName="entries" inverseEntity="Journal" syncable="YES"/>
-        <relationship name="stats" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StatType" syncable="YES"/>
+        <relationship name="servingValues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ServingValue" inverseName="entry" inverseEntity="ServingValue" syncable="YES"/>
+        <relationship name="statValues" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StatValue" inverseName="entry" inverseEntity="StatValue" syncable="YES"/>
     </entity>
     <entity name="EntryType" representedClassName=".EntryType" syncable="YES">
         <attribute name="imageBin" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
@@ -25,15 +25,15 @@
         <relationship name="servingTypes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ServingType" inverseName="entryType" inverseEntity="ServingType" syncable="YES"/>
         <relationship name="statTypes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StatType" inverseName="entryType" inverseEntity="StatType" syncable="YES"/>
     </entity>
-    <entity name="Flavour" representedClassName=".Flavour" syncable="YES">
-        <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="entry" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Entry" inverseName="flavourValues" inverseEntity="Entry" syncable="YES"/>
-        <relationship name="flavour" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="FlavourType" inverseName="flavourValue" inverseEntity="FlavourType" syncable="YES"/>
-    </entity>
     <entity name="FlavourType" representedClassName=".FlavourType" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="entryType" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="EntryType" inverseName="flavourTypes" inverseEntity="EntryType" syncable="YES"/>
-        <relationship name="flavourValue" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Flavour" inverseName="flavour" inverseEntity="Flavour" syncable="YES"/>
+        <relationship name="entryType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntryType" inverseName="flavourTypes" inverseEntity="EntryType" syncable="YES"/>
+        <relationship name="flavourValue" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FlavourValue" inverseName="flavourType" inverseEntity="FlavourValue" syncable="YES"/>
+    </entity>
+    <entity name="FlavourValue" representedClassName=".Flavour" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="entry" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Entry" inverseName="flavourValues" inverseEntity="Entry" syncable="YES"/>
+        <relationship name="flavourType" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FlavourType" inverseName="flavourValue" inverseEntity="FlavourType" syncable="YES"/>
     </entity>
     <entity name="Journal" representedClassName=".Journal" syncable="YES">
         <attribute name="dateStarted" optional="YES" attributeType="Date" syncable="YES"/>
@@ -45,25 +45,32 @@
     <entity name="ServingType" representedClassName=".ServingType" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="entryType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntryType" inverseName="servingTypes" inverseEntity="EntryType" syncable="YES"/>
+        <relationship name="servingValue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServingValue" inverseName="servingType" inverseEntity="ServingValue" syncable="YES"/>
     </entity>
-    <entity name="Stat" representedClassName=".Stat" syncable="YES">
-        <attribute name="value" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" syncable="YES"/>
-        <relationship name="stat" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StatType" inverseName="statValue" inverseEntity="StatType" syncable="YES"/>
+    <entity name="ServingValue" representedClassName=".ServingValue" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" inverseName="servingValues" inverseEntity="Entry" syncable="YES"/>
+        <relationship name="servingType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServingType" inverseName="servingValue" inverseEntity="ServingType" syncable="YES"/>
     </entity>
     <entity name="StatType" representedClassName=".StatType" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="entryType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntryType" inverseName="statTypes" inverseEntity="EntryType" syncable="YES"/>
-        <relationship name="statValue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stat" inverseName="stat" inverseEntity="Stat" syncable="YES"/>
+        <relationship name="statValue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatValue" inverseName="statType" inverseEntity="StatValue" syncable="YES"/>
+    </entity>
+    <entity name="StatValue" representedClassName=".Stat" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" inverseName="statValues" inverseEntity="Entry" syncable="YES"/>
+        <relationship name="statType" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StatType" inverseName="statValue" inverseEntity="StatType" syncable="YES"/>
     </entity>
     <elements>
         <element name="Entry" positionX="-423" positionY="9" width="128" height="240"/>
         <element name="EntryType" positionX="-657" positionY="-171" width="128" height="165"/>
+        <element name="FlavourValue" positionX="-227" positionY="-90" width="128" height="90"/>
         <element name="FlavourType" positionX="-198" positionY="54" width="128" height="90"/>
-        <element name="Flavour" positionX="-227" positionY="-90" width="128" height="90"/>
         <element name="Journal" positionX="-632" positionY="140" width="128" height="118"/>
-        <element name="ServingType" positionX="72" positionY="213" width="128" height="75"/>
+        <element name="ServingType" positionX="72" positionY="213" width="128" height="90"/>
+        <element name="StatValue" positionX="-270" positionY="360" width="128" height="90"/>
         <element name="StatType" positionX="-450" positionY="369" width="128" height="90"/>
-        <element name="Stat" positionX="-270" positionY="360" width="128" height="90"/>
+        <element name="ServingValue" positionX="-450" positionY="-18" width="128" height="90"/>
     </elements>
 </model>
