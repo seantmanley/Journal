@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddJournalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class JournalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var entryTypes:[EntryType] = []
     var selectedEntryTypes:[EntryType] = []

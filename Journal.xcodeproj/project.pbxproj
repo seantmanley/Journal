@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		2AC088DBAF2F7F64EB936DDA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493179F44FDD385FB3A045AA /* Pods.framework */; };
+		491D59241D0F1A0E0051B2E9 /* BaseAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D59231D0F1A0E0051B2E9 /* BaseAddCell.swift */; };
+		491D59261D0F1A280051B2E9 /* AddEntryTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D59251D0F1A280051B2E9 /* AddEntryTypeCell.swift */; };
+		491D59271D0F1A730051B2E9 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84ADD051D0A4382001DECB8 /* JournalViewController.swift */; };
+		491D59291D0F1AD30051B2E9 /* StatType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3261D0DDB2200DF8D65 /* StatType+CoreDataProperties.swift */; };
+		491D592A1D0F1AD30051B2E9 /* StatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3271D0DDB2200DF8D65 /* StatType.swift */; };
+		491D592B1D0F1AD30051B2E9 /* FlavourType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3281D0DDB2200DF8D65 /* FlavourType+CoreDataProperties.swift */; };
+		491D592C1D0F1AD30051B2E9 /* FlavourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3291D0DDB2200DF8D65 /* FlavourType.swift */; };
+		491D592D1D0F1AD30051B2E9 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D32A1D0DDB2200DF8D65 /* Journal+CoreDataProperties.swift */; };
+		491D592E1D0F1AD30051B2E9 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D32B1D0DDB2200DF8D65 /* Journal.swift */; };
+		491D592F1D0F1AD30051B2E9 /* Flavour+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D32C1D0DDB2200DF8D65 /* Flavour+CoreDataProperties.swift */; };
+		491D59301D0F1AD30051B2E9 /* Flavour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D32D1D0DDB2200DF8D65 /* Flavour.swift */; };
+		491D59311D0F1AD30051B2E9 /* ServingType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D32E1D0DDB2200DF8D65 /* ServingType+CoreDataProperties.swift */; };
+		491D59321D0F1AD30051B2E9 /* ServingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D32F1D0DDB2200DF8D65 /* ServingType.swift */; };
+		491D59331D0F1AD30051B2E9 /* EntryType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3301D0DDB2200DF8D65 /* EntryType+CoreDataProperties.swift */; };
+		491D59341D0F1AD30051B2E9 /* EntryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3311D0DDB2200DF8D65 /* EntryType.swift */; };
+		491D59351D0F1AD30051B2E9 /* Stat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3321D0DDB2200DF8D65 /* Stat+CoreDataProperties.swift */; };
+		491D59361D0F1AD30051B2E9 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3331D0DDB2200DF8D65 /* Stat.swift */; };
+		491D59371D0F1AD30051B2E9 /* ServingValue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3341D0DDB2200DF8D65 /* ServingValue+CoreDataProperties.swift */; };
+		491D59381D0F1AD30051B2E9 /* ServingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3351D0DDB2200DF8D65 /* ServingValue.swift */; };
+		491D59391D0F1AD30051B2E9 /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3361D0DDB2200DF8D65 /* Entry+CoreDataProperties.swift */; };
+		491D593A1D0F1AD30051B2E9 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3371D0DDB2200DF8D65 /* Entry.swift */; };
+		491D593D1D0F1BA30051B2E9 /* JournalEditorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D593C1D0F1BA30051B2E9 /* JournalEditorContent.swift */; };
+		491D593F1D0F1C5F0051B2E9 /* EntryTypeContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D593E1D0F1C5F0051B2E9 /* EntryTypeContentProvider.swift */; };
+		491D59411D0F1C7C0051B2E9 /* StatTypeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D59401D0F1C7C0051B2E9 /* StatTypeContent.swift */; };
+		491D59431D0F1C910051B2E9 /* FlavourTypeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D59421D0F1C910051B2E9 /* FlavourTypeContent.swift */; };
+		491D59451D0F1CB00051B2E9 /* ServingTypeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D59441D0F1CB00051B2E9 /* ServingTypeContent.swift */; };
+		491D59471D0F5BB40051B2E9 /* BaseContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D59461D0F5BB40051B2E9 /* BaseContentProvider.swift */; };
 		4951D3381D0DDB2200DF8D65 /* StatType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3261D0DDB2200DF8D65 /* StatType+CoreDataProperties.swift */; };
 		4951D3391D0DDB2200DF8D65 /* StatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3271D0DDB2200DF8D65 /* StatType.swift */; };
 		4951D33A1D0DDB2200DF8D65 /* FlavourType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3281D0DDB2200DF8D65 /* FlavourType+CoreDataProperties.swift */; };
@@ -32,7 +59,6 @@
 		4951D3591D0DDC5000DF8D65 /* JournalEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4951D3571D0DDC5000DF8D65 /* JournalEditor.xcdatamodeld */; };
 		4951D35B1D0DDC5000DF8D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4951D35A1D0DDC5000DF8D65 /* Assets.xcassets */; };
 		4951D35E1D0DDC5000DF8D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4951D35C1D0DDC5000DF8D65 /* LaunchScreen.storyboard */; };
-		C84ADD071D0A4382001DECB8 /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84ADD051D0A4382001DECB8 /* AddJournalViewController.swift */; };
 		C84ADD081D0A4382001DECB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84ADD061D0A4382001DECB8 /* ViewController.swift */; };
 		C84ADD131D0A5C08001DECB8 /* CheckBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84ADD121D0A5C08001DECB8 /* CheckBoxCell.swift */; };
 		C85AA9EC1D0A3161001F44D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85AA9EB1D0A3161001F44D0 /* AppDelegate.swift */; };
@@ -68,6 +94,14 @@
 
 /* Begin PBXFileReference section */
 		2D7B84B1AEB12DA54843191E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		491D59231D0F1A0E0051B2E9 /* BaseAddCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseAddCell.swift; path = Views/BaseAddCell.swift; sourceTree = "<group>"; };
+		491D59251D0F1A280051B2E9 /* AddEntryTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddEntryTypeCell.swift; path = Views/AddEntryTypeCell.swift; sourceTree = "<group>"; };
+		491D593C1D0F1BA30051B2E9 /* JournalEditorContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalEditorContent.swift; path = ViewControllers/ContentProvider/JournalEditorContent.swift; sourceTree = "<group>"; };
+		491D593E1D0F1C5F0051B2E9 /* EntryTypeContentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryTypeContentProvider.swift; path = ViewControllers/ContentProvider/EntryTypeContentProvider.swift; sourceTree = "<group>"; };
+		491D59401D0F1C7C0051B2E9 /* StatTypeContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatTypeContent.swift; path = ViewControllers/ContentProvider/StatTypeContent.swift; sourceTree = "<group>"; };
+		491D59421D0F1C910051B2E9 /* FlavourTypeContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlavourTypeContent.swift; path = ViewControllers/ContentProvider/FlavourTypeContent.swift; sourceTree = "<group>"; };
+		491D59441D0F1CB00051B2E9 /* ServingTypeContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServingTypeContent.swift; path = ViewControllers/ContentProvider/ServingTypeContent.swift; sourceTree = "<group>"; };
+		491D59461D0F5BB40051B2E9 /* BaseContentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseContentProvider.swift; path = ViewControllers/ContentProvider/BaseContentProvider.swift; sourceTree = "<group>"; };
 		493179F44FDD385FB3A045AA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4951D3261D0DDB2200DF8D65 /* StatType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StatType+CoreDataProperties.swift"; path = "CoreDataClasses/StatType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4951D3271D0DDB2200DF8D65 /* StatType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatType.swift; path = CoreDataClasses/StatType.swift; sourceTree = "<group>"; };
@@ -95,7 +129,7 @@
 		4951D35A1D0DDC5000DF8D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4951D35D1D0DDC5000DF8D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4951D35F1D0DDC5000DF8D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C84ADD051D0A4382001DECB8 /* AddJournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddJournalViewController.swift; path = ViewControllers/AddJournalViewController.swift; sourceTree = "<group>"; };
+		C84ADD051D0A4382001DECB8 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalViewController.swift; path = ViewControllers/JournalViewController.swift; sourceTree = "<group>"; };
 		C84ADD061D0A4382001DECB8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewControllers/ViewController.swift; sourceTree = "<group>"; };
 		C84ADD121D0A5C08001DECB8 /* CheckBoxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBoxCell.swift; path = Views/CheckBoxCell.swift; sourceTree = "<group>"; };
 		C85AA9E81D0A3161001F44D0 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +195,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		491D59281D0F1A8E0051B2E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C84ADCE11D0A3992001DECB8 /* CoreDataClasses */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		491D593B1D0F1AFF0051B2E9 /* JournalEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C84ADD051D0A4382001DECB8 /* JournalViewController.swift */,
+				491D59481D0F5BC20051B2E9 /* ContentProviders */,
+			);
+			name = JournalEditor;
+			sourceTree = "<group>";
+		};
+		491D59481D0F5BC20051B2E9 /* ContentProviders */ = {
+			isa = PBXGroup;
+			children = (
+				491D59461D0F5BB40051B2E9 /* BaseContentProvider.swift */,
+				491D593C1D0F1BA30051B2E9 /* JournalEditorContent.swift */,
+				491D593E1D0F1C5F0051B2E9 /* EntryTypeContentProvider.swift */,
+				491D59401D0F1C7C0051B2E9 /* StatTypeContent.swift */,
+				491D59421D0F1C910051B2E9 /* FlavourTypeContent.swift */,
+				491D59441D0F1CB00051B2E9 /* ServingTypeContent.swift */,
+			);
+			name = ContentProviders;
+			sourceTree = "<group>";
+		};
 		4951D34F1D0DDC5000DF8D65 /* JournalEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +275,7 @@
 		C84ADD041D0A4337001DECB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C84ADD051D0A4382001DECB8 /* AddJournalViewController.swift */,
+				491D593B1D0F1AFF0051B2E9 /* JournalEditor */,
 				C84ADD061D0A4382001DECB8 /* ViewController.swift */,
 				C8E2E6CD1D0A7967005F06B2 /* MenuViewController.swift */,
 				C8E2E6D11D0A7FBC005F06B2 /* AddJournalEntryViewController.swift */,
@@ -224,6 +288,8 @@
 			children = (
 				C84ADD121D0A5C08001DECB8 /* CheckBoxCell.swift */,
 				C8E2E6CF1D0A7BC3005F06B2 /* TileCell.swift */,
+				491D59231D0F1A0E0051B2E9 /* BaseAddCell.swift */,
+				491D59251D0F1A280051B2E9 /* AddEntryTypeCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -255,9 +321,9 @@
 		C85AA9EA1D0A3161001F44D0 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				491D59281D0F1A8E0051B2E9 /* Model */,
 				C84ADD041D0A4337001DECB8 /* ViewControllers */,
 				C84ADD111D0A5BDD001DECB8 /* Views */,
-				C84ADCE11D0A3992001DECB8 /* CoreDataClasses */,
 				C85AA9EB1D0A3161001F44D0 /* AppDelegate.swift */,
 				C8E2E6E81D0A8B13005F06B2 /* AppManager.swift */,
 				C8E2E6CB1D0A7785005F06B2 /* Tile.Storyboard */,
@@ -502,9 +568,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491D59321D0F1AD30051B2E9 /* ServingType.swift in Sources */,
+				491D59311D0F1AD30051B2E9 /* ServingType+CoreDataProperties.swift in Sources */,
+				491D592B1D0F1AD30051B2E9 /* FlavourType+CoreDataProperties.swift in Sources */,
+				491D592E1D0F1AD30051B2E9 /* Journal.swift in Sources */,
+				491D59271D0F1A730051B2E9 /* JournalViewController.swift in Sources */,
+				491D592A1D0F1AD30051B2E9 /* StatType.swift in Sources */,
+				491D593A1D0F1AD30051B2E9 /* Entry.swift in Sources */,
+				491D59291D0F1AD30051B2E9 /* StatType+CoreDataProperties.swift in Sources */,
 				4951D3531D0DDC5000DF8D65 /* ViewController.swift in Sources */,
+				491D592F1D0F1AD30051B2E9 /* Flavour+CoreDataProperties.swift in Sources */,
+				491D59361D0F1AD30051B2E9 /* Stat.swift in Sources */,
+				491D592C1D0F1AD30051B2E9 /* FlavourType.swift in Sources */,
+				491D59331D0F1AD30051B2E9 /* EntryType+CoreDataProperties.swift in Sources */,
 				4951D3511D0DDC5000DF8D65 /* AppDelegate.swift in Sources */,
+				491D592D1D0F1AD30051B2E9 /* Journal+CoreDataProperties.swift in Sources */,
 				4951D3591D0DDC5000DF8D65 /* JournalEditor.xcdatamodeld in Sources */,
+				491D59391D0F1AD30051B2E9 /* Entry+CoreDataProperties.swift in Sources */,
+				491D59351D0F1AD30051B2E9 /* Stat+CoreDataProperties.swift in Sources */,
+				491D59381D0F1AD30051B2E9 /* ServingValue.swift in Sources */,
+				491D59341D0F1AD30051B2E9 /* EntryType.swift in Sources */,
+				491D59301D0F1AD30051B2E9 /* Flavour.swift in Sources */,
+				491D59371D0F1AD30051B2E9 /* ServingValue+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,28 +600,35 @@
 				4951D3421D0DDB2200DF8D65 /* EntryType+CoreDataProperties.swift in Sources */,
 				4951D3471D0DDB2200DF8D65 /* ServingValue.swift in Sources */,
 				C84ADD131D0A5C08001DECB8 /* CheckBoxCell.swift in Sources */,
+				491D593D1D0F1BA30051B2E9 /* JournalEditorContent.swift in Sources */,
 				4951D3391D0DDB2200DF8D65 /* StatType.swift in Sources */,
 				4951D3431D0DDB2200DF8D65 /* EntryType.swift in Sources */,
 				4951D3411D0DDB2200DF8D65 /* ServingType.swift in Sources */,
 				4951D3381D0DDB2200DF8D65 /* StatType+CoreDataProperties.swift in Sources */,
+				491D59411D0F1C7C0051B2E9 /* StatTypeContent.swift in Sources */,
 				4951D3451D0DDB2200DF8D65 /* Stat.swift in Sources */,
 				4951D33A1D0DDB2200DF8D65 /* FlavourType+CoreDataProperties.swift in Sources */,
 				4951D3401D0DDB2200DF8D65 /* ServingType+CoreDataProperties.swift in Sources */,
 				C8E2E6E91D0A8B13005F06B2 /* AppManager.swift in Sources */,
 				4951D33F1D0DDB2200DF8D65 /* Flavour.swift in Sources */,
 				4951D33B1D0DDB2200DF8D65 /* FlavourType.swift in Sources */,
+				491D59431D0F1C910051B2E9 /* FlavourTypeContent.swift in Sources */,
+				491D59451D0F1CB00051B2E9 /* ServingTypeContent.swift in Sources */,
 				4951D33C1D0DDB2200DF8D65 /* Journal+CoreDataProperties.swift in Sources */,
 				C85AA9F41D0A3161001F44D0 /* Journal.xcdatamodeld in Sources */,
 				4951D3491D0DDB2200DF8D65 /* Entry.swift in Sources */,
 				C8E2E6D01D0A7BC3005F06B2 /* TileCell.swift in Sources */,
 				C85AA9EC1D0A3161001F44D0 /* AppDelegate.swift in Sources */,
+				491D59261D0F1A280051B2E9 /* AddEntryTypeCell.swift in Sources */,
 				4951D33E1D0DDB2200DF8D65 /* Flavour+CoreDataProperties.swift in Sources */,
 				4951D3481D0DDB2200DF8D65 /* Entry+CoreDataProperties.swift in Sources */,
 				C84ADD081D0A4382001DECB8 /* ViewController.swift in Sources */,
 				4951D33D1D0DDB2200DF8D65 /* Journal.swift in Sources */,
+				491D59471D0F5BB40051B2E9 /* BaseContentProvider.swift in Sources */,
 				C8E2E6CE1D0A7967005F06B2 /* MenuViewController.swift in Sources */,
+				491D593F1D0F1C5F0051B2E9 /* EntryTypeContentProvider.swift in Sources */,
 				4951D3441D0DDB2200DF8D65 /* Stat+CoreDataProperties.swift in Sources */,
-				C84ADD071D0A4382001DECB8 /* AddJournalViewController.swift in Sources */,
+				491D59241D0F1A0E0051B2E9 /* BaseAddCell.swift in Sources */,
 				4951D3461D0DDB2200DF8D65 /* ServingValue+CoreDataProperties.swift in Sources */,
 				C8E2E6D21D0A7FBC005F06B2 /* AddJournalEntryViewController.swift in Sources */,
 			);
@@ -796,6 +888,7 @@
 				4951D3621D0DDC5000DF8D65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C85AA9E31D0A3161001F44D0 /* Build configuration list for PBXProject "Journal" */ = {
 			isa = XCConfigurationList;
